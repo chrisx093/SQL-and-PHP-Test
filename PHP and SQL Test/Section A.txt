@@ -1,0 +1,31 @@
+
+
+1. Structured Query Language
+2. String, Number, Varchar, Text
+3. 
+    COUNT: We use this in counting the total number of a row
+    MAX: This is used in getting the maximum value in a column
+    MIN: This is used in getting the minimum value in a column
+
+4. SELECT: It is used to select a particular row from the database table
+	INSERT: Used to insert data into the database
+	WHERE:	Indicates the particular place we want to perform an action
+	UPDATE: Used to change the existing value of a particular data
+	DELETE: Used to delete a row from the database
+	ALTER: Used to add a new column in the database 
+    DROP:Deletes a database, table and other data
+    RENAME: Renames a database 
+
+Examples:
+INSERT: INSERT INTO users_table (first_name, age, id)
+        INSERT INTO student_table (first_name, dept, courses)
+
+WHERE: SELECT first_name FROM user_table WHERE id = 2
+        SELECT salary FROM user_table WHERE first_name = 'john' AND last_name = 'dave'
+
+UPDATE users_table SET id = 5 WHERE first_name = 'john' AND last_name ='doe'
+
+DELETE FROM users_table WHERE id = 10
+DELETE FROM student_table WHERE dept = 'mathematics'
+
+DROP users_table

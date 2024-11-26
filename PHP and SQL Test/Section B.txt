@@ -1,0 +1,13 @@
+1.  UPDATE employees_table SET ethnicity= 'African' WHERE ethnicity = 'Black'
+2.  REMOVE FROM employees_table WHERE employees_id = E02002, E02005, E02006, E02007
+3. SELECT * FROM employees_table WHERE Gender = 'Female ' AND Ethnicity = 'Asian' ORDER BY Full_Name DESC
+
+4. UPDATE employees_table SET JOB_TITLE = 'Sr. Analyst' WHERE Employees_id = E02008
+
+5. DELETE * FROM employees_table WHERE age > 60
+
+6.SELECT UPPER(Full_Name) FROM employees_table WHERE Department = 'IT', 'Marketing', 'Engineering'
+
+7. SELECT Full_name, Annual_salary  FROM employees_table WHERE Annual_Salary > 70000 AND Full_name NOT IN ('Kai Le', 'Ezra vu', 'Jade Hu')
+
+8. SELECT || ('My name is ', full_name 'and I am a Director in the', Department 'department, my Business_ unit is' business_ unit, 'and i am' age'years old.') AS introduction FROM employees_table WHERE position = 'Director' ORDER BY Full_Name ASC
